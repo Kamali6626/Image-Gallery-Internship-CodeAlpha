@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Image Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Image Gallery</h1>
+  <p>Mobile | Laptop | Automotive collection</p>
+</header>
+
+<div class="filters">
+  <button class="filter-btn active" data-filter="all"> All</button>
+  <button class="filter-btn" data-filter="mobile"> Mobiles</button>
+  <button class="filter-btn" data-filter="laptop"> Laptops</button>
+  <button class="filter-btn" data-filter="car"> Cars</button>
+</div>
+
+<div class="gallery" id="gallery">
+  
+  <div class="gallery-item" data-category="mobile" data-index="0">
+    <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569" alt="iPhone aesthetic mobile" loading="lazy"/>
+    <div class="overlay"><span> iPhone 15 Pro </span></div>
+  </div>
+  <div class="gallery-item" data-category="mobile" data-index="1">
+    <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf" alt="Modern smartphone on desk" loading="lazy"/>
+    <div class="overlay"><span>  Samsung Galaxy  </span></div>
+  </div>
+  <div class="gallery-item" data-category="mobile" data-index="2">
+    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=700" alt="Hand holding phone" loading="lazy"/>
+    <div class="overlay"><span> OnePluse</span></div>
+  </div>
+  
+
+  <!-- LAPTOP category -->
+  <div class="gallery-item" data-category="laptop" data-index="3">
+    <img src="https://picsum.photos/id/0/700/467?grayscale&seed=laptop1" alt="Macbook pro workspace" loading="lazy"/>
+    <div class="overlay"><span> MacBook Pro </span></div>
+  </div>
+  <div class="gallery-item" data-category="laptop" data-index="4">
+    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853" alt="Creative laptop setup" loading="lazy"/>
+    <div class="overlay"><span> Dell Laptop</span></div>
+  </div>
+  <div class="gallery-item" data-category="laptop" data-index="5">
+    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853" alt="Gaming laptop RGB" loading="lazy"/>
+    <div class="overlay"><span>HP Laptop </span></div>
+  </div>
+
+  <!-- CAR category (superior automotive) -->
+  <div class="gallery-item" data-category="car" data-index="6">
+    <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e" alt="Luxury BMW car" loading="lazy"/>
+    <div class="overlay"><span> BMW </span></div>
+  </div>
+  <div class="gallery-item" data-category="car" data-index="7">
+    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Toyota" loading="lazy"/>
+    <div class="overlay"><span> Toyota</span></div>
+  </div>
+  <div class="gallery-item" data-category="car" data-index="8">
+    <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=700" alt="Vintage muscle car" loading="lazy"/>
+    <div class="overlay"><span> Jeep </span></div>
+  </div>
+</div>
+
+<!-- Lightbox Frame -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lb-close">✕</button>
+  <button class="lb-prev" id="lb-prev">‹</button>
+  <button class="lb-next" id="lb-next">›</button>
+  <div class="lb-content">
+    <img id="lb-img" src="" alt="premium visual" />
+    <p id="lb-caption"></p>
+  </div>
+</div>
+
+<footer>
+  <p>Created by <span>Kamaludin Kamali</span></p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
